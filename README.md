@@ -62,9 +62,52 @@ no handoff and no human confirmation step.
 | `campus-campaign-desk.template.yaml` | Switch template (same format as `examples/agent-templates/triage-pair.template.yaml` in the Switch repo): params, two agents, one bridged room, kickoff |
 | `demo/01..03-*.md` | Fictional sample announcements: a GO, a CHECK and a SKIP case |
 | `demo/SCRIPT.md` | Step-by-step demo / video script with expected agent behaviour |
+| `desk_agents/` | Custom Switch protocol agents (path b) and the deterministic triage logic |
+| `tests/` | Tests on the three demo samples |
+| `deploy/` | Headless local Switch server notes |
+| `demo/runs/` | Logs of real runs |
 | `scripts/validate_template.py` | Checks the YAML, agent references, @mentions, and that no secrets/emails are in it |
 
-## Run it
+## Two ways to run it
+
+**(a) Official path - Switch Console + a coding agent.** Import the template
+below; Console backs `desk-triager` and `desk-ops` with Claude Code, Codex or
+OpenCode, and the instructions in the YAML drive them.
+
+**(b) No coding-agent account needed - custom protocol agents.**
+`desk_agents/` implements the same two agents as plain Python clients of the
+[Switch agent protocol](https://docs.switchagents.ai/switch-rooms/internals/agent-protocol):
+they register with `POST /agents`, open `/agents/{id}/connection/ws`, answer
+pings, act only on `message` events with `payload.addressed: true`, and work
+through Switch operations (`create_room`, `send_targeted_message`,
+`post_message`, `read_context`). Extraction is deterministic (dates, online /
+hybrid / offline, certificate wording, deadlines), so the demo is
+repeatable. Handoff to desk-ops is a real addressed Switch message.
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python -m pytest -q tests               # 5 tests on the demo samples
+# start a local Switch server: see deploy/README.md
+printf 'SWITCH_URL=http://localhost:8000\nSWITCH_REGISTRATION_KEY=<bootstrap key>\n' > .env
+.venv/bin/python -m desk_agents.run_agents --create-room              # agents wait in desk-campaign-desk
+.venv/bin/python -m desk_agents.run_agents --create-room --demo \
+    --log demo/runs/my-run.log                                       # headless scripted run
+```
+
+Without `--demo`, people paste announcements into the room (in Mattermost
+when the server runs with `--profile collab`) and address `@desk-triager`.
+`--demo` adds `desk-demo-feeder`, a scripted agent that pastes the three
+samples and the confirmation line, standing in for a person so the run
+needs no chat client.
+
+**Real run log:** `demo/runs/run-20261106-1056.log` and its
+`.context.json` (the room history read back through `read_context`) come
+from an actual run against a local Switch 0.31.0 server (internal room, no
+Mattermost bridge). Note: on Switch 0.31.0 an agent cannot change its own
+`addressing` (the server answers 403 and tells the owner to change it in
+Console); the run works anyway because all three agents share one owner.
+
+## Run it with Switch Console (path a)
 
 Requirements: Docker, Switch Console, and one AI coding agent you are signed
 in to (Claude Code, Codex or OpenCode). Switch is free; the agent needs its

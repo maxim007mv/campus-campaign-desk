@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 plan.md
 *.mp4
+.venv/
+.switch-agents.local.json
+.pytest_cache/

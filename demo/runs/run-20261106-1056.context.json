@@ -1,0 +1,202 @@
+{
+  "threads": [
+    {
+      "root": {
+        "id": "sw_a6b282c9f70d4ca792706209d62bd9ca",
+        "kind": "room_join",
+        "sender": "@switch-agent-41dfd151:localhost",
+        "sender_name": "desk-triager",
+        "body": "desk-triager joined the room",
+        "timestamp": 1793951796746,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_dbd6e369a5d74ce79774ec3b4f09db17",
+        "kind": "room_join",
+        "sender": "@switch-agent-8a44cc15:localhost",
+        "sender_name": "desk-ops",
+        "body": "desk-ops joined the room",
+        "timestamp": 1793951796763,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_43d4fba1e33647c4897f0a64eeee80aa",
+        "kind": "message",
+        "sender": "@switch-agent-41dfd151:localhost",
+        "sender_name": "desk-triager",
+        "body": "Hey! I'm on standby — @desk-triager to get started.",
+        "timestamp": 1793951796764,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_bdbb0748344543abbedcff53040b93ad",
+        "kind": "room_join",
+        "sender": "@switch-agent-e96fddcd:localhost",
+        "sender_name": "desk-demo-feeder",
+        "body": "desk-demo-feeder joined the room",
+        "timestamp": 1793951796778,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_538f661bb38e4480aaa08df0e3eae4e5",
+        "kind": "message",
+        "sender": "@switch-agent-8a44cc15:localhost",
+        "sender_name": "desk-ops",
+        "body": "Hi! Mention @desk-ops to get my attention.",
+        "timestamp": 1793951796780,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_7d3f16863df143fdad03834a0e69a442",
+        "kind": "room_join",
+        "sender": "@switch-admin:localhost",
+        "sender_name": "admin",
+        "body": "admin joined the room",
+        "timestamp": 1793951796799,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_785b853e8a5d415d99a74b8acf19b7a6",
+        "kind": "message",
+        "sender": "@switch-agent-e96fddcd:localhost",
+        "sender_name": "desk-demo-feeder",
+        "body": "Hello! Tag @desk-demo-feeder to loop me in.",
+        "timestamp": 1793951796803,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_dac344ec706e4bc39e1419954a10f1e6",
+        "kind": "message",
+        "sender": "@switch-agent-e96fddcd:localhost",
+        "sender_name": "desk-demo-feeder",
+        "body": "@desk-triager Example Spring Online CTF 2027 (fictional sample)\n\nJeopardy-style CTF, fully online, 48 hours: 12 March 2027 10:00 UTC to\n14 March 2027 10:00 UTC. Teams of up to 4. Registration on the CTF site\ncloses when the event starts. All teams that solve at least one challenge\nreceive an electronic participation certificate. Categories: web, crypto,\nforensics, reversing, misc.",
+        "timestamp": 1793951798928,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_aca8d007370040e2b7a0c4aff62ad5f6",
+        "kind": "message",
+        "sender": "@switch-agent-41dfd151:localhost",
+        "sender_name": "desk-triager",
+        "body": "@desk-ops **Example Spring Online CTF 2027**: Example Spring Online CTF 2027 (fictional sample)\n- Event: Example Spring Online CTF 2027\n- Dates: Jeopardy-style CTF, fully online, 48 hours: 12 March 2027 10:00 UTC to 14 March 2027 10:00 UTC.\n- Format: online\n- Certificate: yes (\"All teams that solve at least one challenge receive an electronic participation certificate.\")\n- Deadline that matters next: Registration on the CTF site closes when the event starts.\n- Team size: teams of up to 4\n- Needed action: register\n**GO**: fully online, certificate for participants, deadline reachable.\n\nOpen events:\n1. Example Spring Online CTF 2027: GO\n\nplease plan: Example Spring Online CTF 2027 - register by 2027-03-12",
+        "timestamp": 1793951799010,
+        "attachments": []
+      },
+      "replies": [
+        {
+          "id": "sw_1411a4e24e3a42f5b3f9920742991892",
+          "kind": "message",
+          "sender": "@switch-agent-8a44cc15:localhost",
+          "sender_name": "desk-ops",
+          "body": "Plan for **Example Spring Online CTF 2027** (GO):\n1. [ ] register the team on the event site - captain, before 2027-03-12\n2. [ ] join the event chat / platform - member, before 2027-03-12\n3. [ ] read rules and pick tasks - anyone, day 1\n4. [ ] submit work and keep proof - anyone, during event\n5. [ ] collect the certificate - captain, after event\nTeam message draft: <captain> here. Example Spring Online CTF 2027: GO. Next step: register the team on the event site by 2027-03-12. Reply 'registered' here when done.",
+          "timestamp": 1793951799077,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "sw_9fc07e990a264f3ab050b5a93e5bd7ab",
+        "kind": "message",
+        "sender": "@switch-agent-e96fddcd:localhost",
+        "sender_name": "desk-demo-feeder",
+        "body": "@desk-triager FWD: hackathon from the uni chat (fictional sample)\n\n\"City Data Hack 2027 - 3 days, 20-22 April. Kickoff and final pitches at the\ntech park, online teams welcome for the build phase. Register until 15 April\nvia the form. Prizes for top 3!!\" - no idea if we get certificates, someone\ncheck pls. teams 3-5 ppl",
+        "timestamp": 1793951804982,
+        "attachments": []
+      },
+      "replies": []
+    },
+    {
+      "root": {
+        "id": "sw_8a08ac6f2d79406abe3681ec19cb3ae7",
+        "kind": "message",
+        "sender": "@switch-agent-41dfd151:localhost",
+        "sender_name": "desk-triager",
+        "body": "@desk-ops **City Data Hack 2027**: FWD: hackathon from the uni chat (fictional sample)\n- Event: City Data Hack 2027\n- Dates: \"City Data Hack 2027 - 3 days, 20-22 April.\n- Format: hybrid (in-person part: Kickoff and final pitches at the tech park, online teams welcome for the build phase.)\n- Certificate: not stated (\"Prizes for top 3!!\" - no idea if we get certificates, someone check pls.\")\n- Deadline that matters next: Register until 15 April via the form.\n- Team size: teams 3-5 ppl\n- Needed action: ask organisers\n**CHECK**: certificate terms not stated; format is hybrid (Kickoff and final pitches at the tech park, online teams welcome for the build phase.).\n\nOpen events:\n1. Example Spring Online CTF 2027: GO\n2. City Data Hack 2027: CHECK\n\nplease plan: City Data Hack 2027 - ask organisers by 2027-04-15",
+        "timestamp": 1793951805059,
+        "attachments": []
+      },
+      "replies": [
+        {
+          "id": "sw_8423c7b0fc364496beecd78d2bcf2f0f",
+          "kind": "message",
+          "sender": "@switch-agent-8a44cc15:localhost",
+          "sender_name": "desk-ops",
+          "body": "Plan for **City Data Hack 2027** (CHECK):\n1. [ ] send the organiser question below - captain, today\n2. [ ] re-paste the answer here for a new triage - captain, on reply\n3. [ ] prepare team names and roles - member, before 2027-04-15\nQuestion to organisers: Hello! Our student team is interested in City Data Hack 2027. Could you please confirm whether every participant receives a participation certificate and whether the whole event, including kickoff and finals, can be done online? Thank you!\nTeam message draft: <captain> here. City Data Hack 2027: CHECK. Next step: send the organiser question below by 2027-04-15. Reply 'registered' here when done.",
+          "timestamp": 1793951805131,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "sw_9eb25cb93ee54677a5881f1017b34449",
+        "kind": "message",
+        "sender": "@switch-agent-e96fddcd:localhost",
+        "sender_name": "desk-demo-feeder",
+        "body": "@desk-triager Sample Algorithmic Cup qualifier (fictional sample)\n\nIndividual online programming contest, qualifier on 2 February 2026, 3 hours,\nany language. Registration closed on 31 January 2026. Top 100 advance to an\non-site final. Certificates are sent to finalists only.",
+        "timestamp": 1793951811036,
+        "attachments": []
+      },
+      "replies": [
+        {
+          "id": "sw_2b6330d709974c3a8fa6ddfad1e07273",
+          "kind": "message",
+          "sender": "@switch-agent-41dfd151:localhost",
+          "sender_name": "desk-triager",
+          "body": "**Sample Algorithmic Cup**: Sample Algorithmic Cup qualifier (fictional sample)\n- Event: Sample Algorithmic Cup\n- Dates: Individual online programming contest, qualifier on 2 February 2026, 3 hours, any language.\n- Format: hybrid (in-person part: Top 100 advance to an on-site final.)\n- Certificate: finalists only (\"Certificates are sent to finalists only.\")\n- Deadline that matters next: Registration closed on 31 January 2026.\n- Team size: individual\n- Needed action: skip\n**SKIP**: deadline passed, registration closed, certificate for finalists only.\n\nOpen events:\n1. Example Spring Online CTF 2027: GO\n2. City Data Hack 2027: CHECK\n3. Sample Algorithmic Cup: SKIP",
+          "timestamp": 1793951811117,
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "root": {
+        "id": "sw_926b4da5fe3245f99759dd1b95909945",
+        "kind": "message",
+        "sender": "@switch-agent-e96fddcd:localhost",
+        "sender_name": "desk-demo-feeder",
+        "body": "@desk-triager Registered for the CTF, mark it.",
+        "timestamp": 1793951817089,
+        "attachments": []
+      },
+      "replies": [
+        {
+          "id": "sw_27e0e9d9d8f94225a1b79b69399bc3f6",
+          "kind": "message",
+          "sender": "@switch-agent-41dfd151:localhost",
+          "sender_name": "desk-triager",
+          "body": "Noted, confirmed in the room.\nOpen events:\n1. Example Spring Online CTF 2027: registered (confirmed in the room)\n2. City Data Hack 2027: CHECK\n3. Sample Algorithmic Cup: SKIP",
+          "timestamp": 1793951817159,
+          "attachments": []
+        }
+      ]
+    }
+  ],
+  "truncated": false,
+  "oldest_timestamp": 1793951796746
+}

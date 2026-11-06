@@ -1,0 +1,86 @@
+[10:56:38] desk-demo-feeder: @desk-triager Example Spring Online CTF 2027 (fictional sample)
+
+Jeopardy-style CTF, fully online, 48 hours: 12 March 2027 10:00 UTC to
+14 March 2027 10:00 UTC. Teams of up to 4. Registration on the CTF site
+closes when the event starts. All teams that solve at least one challenge
+receive an electronic participation certificate. Categories: web, crypto,
+forensics, reversing, misc.
+[10:56:38] <- desk-triager from desk-demo-feeder: Example Spring Online CTF 2027 (fictional sample)  Jeopardy-style CTF, fully online, 48 hours: 12 March 2027 10:00 UTC t
+[10:56:39] desk-triager: @desk-ops **Example Spring Online CTF 2027**: Example Spring Online CTF 2027 (fictional sample)
+- Event: Example Spring Online CTF 2027
+- Dates: Jeopardy-style CTF, fully online, 48 hours: 12 March 2027 10:00 UTC to 14 March 2027 10:00 UTC.
+- Format: online
+- Certificate: yes ("All teams that solve at least one challenge receive an electronic participation certificate.")
+- Deadline that matters next: Registration on the CTF site closes when the event starts.
+- Team size: teams of up to 4
+- Needed action: register
+**GO**: fully online, certificate for participants, deadline reachable.
+
+Open events:
+1. Example Spring Online CTF 2027: GO
+
+please plan: Example Spring Online CTF 2027 - register by 2027-03-12
+[10:56:39] <- desk-ops from desk-triager: @desk-ops **Example Spring Online CTF 2027**: Example Spring Online CTF 2027 (fictional sample) - Event: Example Spring 
+[10:56:39] desk-ops: Plan for **Example Spring Online CTF 2027** (GO):
+1. [ ] register the team on the event site - captain, before 2027-03-12
+2. [ ] join the event chat / platform - member, before 2027-03-12
+3. [ ] read rules and pick tasks - anyone, day 1
+4. [ ] submit work and keep proof - anyone, during event
+5. [ ] collect the certificate - captain, after event
+Team message draft: <captain> here. Example Spring Online CTF 2027: GO. Next step: register the team on the event site by 2027-03-12. Reply 'registered' here when done.
+[10:56:44] desk-demo-feeder: @desk-triager FWD: hackathon from the uni chat (fictional sample)
+
+"City Data Hack 2027 - 3 days, 20-22 April. Kickoff and final pitches at the
+tech park, online teams welcome for the build phase. Register until 15 April
+via the form. Prizes for top 3!!" - no idea if we get certificates, someone
+check pls. teams 3-5 ppl
+[10:56:45] <- desk-triager from desk-demo-feeder: FWD: hackathon from the uni chat (fictional sample)  "City Data Hack 2027 - 3 days, 20-22 April. Kickoff and final pitch
+[10:56:45] desk-triager: @desk-ops **City Data Hack 2027**: FWD: hackathon from the uni chat (fictional sample)
+- Event: City Data Hack 2027
+- Dates: "City Data Hack 2027 - 3 days, 20-22 April.
+- Format: hybrid (in-person part: Kickoff and final pitches at the tech park, online teams welcome for the build phase.)
+- Certificate: not stated ("Prizes for top 3!!" - no idea if we get certificates, someone check pls.")
+- Deadline that matters next: Register until 15 April via the form.
+- Team size: teams 3-5 ppl
+- Needed action: ask organisers
+**CHECK**: certificate terms not stated; format is hybrid (Kickoff and final pitches at the tech park, online teams welcome for the build phase.).
+
+Open events:
+1. Example Spring Online CTF 2027: GO
+2. City Data Hack 2027: CHECK
+
+please plan: City Data Hack 2027 - ask organisers by 2027-04-15
+[10:56:45] <- desk-ops from desk-triager: @desk-ops **City Data Hack 2027**: FWD: hackathon from the uni chat (fictional sample) - Event: City Data Hack 2027 - Da
+[10:56:45] desk-ops: Plan for **City Data Hack 2027** (CHECK):
+1. [ ] send the organiser question below - captain, today
+2. [ ] re-paste the answer here for a new triage - captain, on reply
+3. [ ] prepare team names and roles - member, before 2027-04-15
+Question to organisers: Hello! Our student team is interested in City Data Hack 2027. Could you please confirm whether every participant receives a participation certificate and whether the whole event, including kickoff and finals, can be done online? Thank you!
+Team message draft: <captain> here. City Data Hack 2027: CHECK. Next step: send the organiser question below by 2027-04-15. Reply 'registered' here when done.
+[10:56:51] desk-demo-feeder: @desk-triager Sample Algorithmic Cup qualifier (fictional sample)
+
+Individual online programming contest, qualifier on 2 February 2026, 3 hours,
+any language. Registration closed on 31 January 2026. Top 100 advance to an
+on-site final. Certificates are sent to finalists only.
+[10:56:51] <- desk-triager from desk-demo-feeder: Sample Algorithmic Cup qualifier (fictional sample)  Individual online programming contest, qualifier on 2 February 2026
+[10:56:51] desk-triager: **Sample Algorithmic Cup**: Sample Algorithmic Cup qualifier (fictional sample)
+- Event: Sample Algorithmic Cup
+- Dates: Individual online programming contest, qualifier on 2 February 2026, 3 hours, any language.
+- Format: hybrid (in-person part: Top 100 advance to an on-site final.)
+- Certificate: finalists only ("Certificates are sent to finalists only.")
+- Deadline that matters next: Registration closed on 31 January 2026.
+- Team size: individual
+- Needed action: skip
+**SKIP**: deadline passed, registration closed, certificate for finalists only.
+
+Open events:
+1. Example Spring Online CTF 2027: GO
+2. City Data Hack 2027: CHECK
+3. Sample Algorithmic Cup: SKIP
+[10:56:57] desk-demo-feeder: @desk-triager Registered for the CTF, mark it.
+[10:56:57] <- desk-triager from desk-demo-feeder: Registered for the CTF, mark it.
+[10:56:57] desk-triager: Noted, confirmed in the room.
+Open events:
+1. Example Spring Online CTF 2027: registered (confirmed in the room)
+2. City Data Hack 2027: CHECK
+3. Sample Algorithmic Cup: SKIP

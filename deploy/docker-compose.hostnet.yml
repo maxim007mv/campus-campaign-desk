@@ -1,0 +1,29 @@
+services:
+  postgres:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: ["postgres:127.0.0.1","mattermost:127.0.0.1","switch:127.0.0.1"]
+  init-db:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: ["postgres:127.0.0.1","mattermost:127.0.0.1","switch:127.0.0.1"]
+  mattermost:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: ["postgres:127.0.0.1","mattermost:127.0.0.1","switch:127.0.0.1"]
+  switch:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: ["postgres:127.0.0.1","mattermost:127.0.0.1","switch:127.0.0.1"]
+    environment:
+      SERVER_PORT: "8010"
+  gateway:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: ["postgres:127.0.0.1","mattermost:127.0.0.1","switch:127.0.0.1"]
+    environment:
+      SWITCH_URL: http://127.0.0.1:8010
+  setup:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: ["postgres:127.0.0.1","mattermost:127.0.0.1","switch:127.0.0.1"]
