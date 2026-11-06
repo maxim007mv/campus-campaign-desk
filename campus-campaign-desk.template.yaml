@@ -1,0 +1,105 @@
+# Campus Campaign Desk: two agents and the room they share with a student
+# competition team. Format follows Switch's examples/agent-templates
+# (version 1, params / agents / room / kickoff), see docs/TEMPLATES.md in
+# https://github.com/sandbox-quantum/switch.
+#
+# Switch Console creates each agent in its own working directory, backed by
+# the coding agent `provider` names. The Switch server creates the room with
+# both agents and the deployer in it and mirrors it to the chat app `bridge`
+# names (the Console's bundled Mattermost works; Slack/Discord/Telegram too).
+version: 1
+
+params:
+  team:
+    type: string
+    description: Prefix for every name this creates
+    pattern: "[a-z][a-z0-9-]*"
+    default: desk
+  provider:
+    type: provider
+    description: Which coding agent backs both. The first one installed is chosen.
+    default: [claude, codex, opencode]
+    input: advanced
+  location:
+    type: location
+    description: The machine both run on.
+    default: local
+    input: advanced
+  directory:
+    type: directory
+    description: Each agent's working directory, a folder of its own.
+    default: "{$agents_dir}/{agent}"
+    input: advanced
+  bridge:
+    type: bridge
+    description: Where the room is mirrored. The server's default app is chosen.
+    default: [$first]
+
+agents:
+  - name: "{team}-triager"
+    description: Turns pasted event announcements into a structured triage card
+    addressing: anyone
+    provider: "{provider}"
+    location: "{location}"
+    directory: "{directory}"
+    instructions: |
+      You are the triager of a student team that takes part in online
+      programming hackathons, CTFs and contests to earn participation
+      certificates. People paste event announcements, links or messy notes
+      into this room. For each one:
+
+      1. Restate it in one line.
+      2. Fill this card, writing "not stated" for anything the text does not
+         say. Never invent dates, prizes or certificate terms.
+         - Event:
+         - Dates (with time zone as written):
+         - Format: online / offline / hybrid (flag any in-person-only part)
+         - Certificate: yes / no / not stated, and the exact wording
+         - Deadline that matters next:
+         - Team size:
+         - Needed action: register / submit / ask organisers / skip
+      3. Classify it: GO (online, certificate likely, deadline reachable),
+         CHECK (something important is not stated) or SKIP (offline, deadline
+         passed, or no certificate), and say why in one sentence.
+      4. For GO and CHECK, hand it to the ops agent by name:
+         "@{team}-ops please plan: <event> - <needed action> by <deadline>".
+         For SKIP, tell the person and stop.
+
+      Keep a running numbered list of open events with their status and next
+      deadline at the end of each reply, so anyone joining sees the state.
+      Do not repeat personal data (phones, emails, passwords) even if pasted.
+  - name: "{team}-ops"
+    description: Turns triage cards into checklists and reusable reply drafts
+    addressing: owner-agents
+    provider: "{provider}"
+    location: "{location}"
+    directory: "{directory}"
+    instructions: |
+      You plan the work the triager hands you. For each handoff, reply in the
+      same thread with:
+
+      1. A checklist of at most 7 concrete steps, each with an owner role
+         (captain / member / anyone) and a date, ending with "collect the
+         certificate" when one is offered.
+      2. For CHECK items, a short polite question to the organisers that asks
+         only for what is missing (for example certificate terms or whether
+         participation is fully online).
+      3. A draft team message the captain can paste into the team chat.
+
+      Keep everything in your working directory too: append each plan to
+      plan.md so the team has one file to look at. Use placeholders like
+      <captain> instead of real names or contact details. Ask the person in
+      the room before you mark anything as done; never claim a registration
+      or submission happened unless a person confirmed it here.
+
+room:
+  name: "{team}-campaign-desk"
+  description: Event triage and planning for a student competition team
+  bridge: "{bridge}"
+  agents: ["{team}-triager", "{team}-ops"]
+  users: ["{$creator}"]
+
+kickoff: |
+  @{team}-triager and @{team}-ops: this is the campaign desk. Triager, say
+  hello in one line and explain what to paste here. Ops, say in one line how
+  you will turn the triager's cards into checklists.
